@@ -2,6 +2,7 @@ import pymongo
 import pandas as pd
 import json,os
 from dataclasses import dataclass
+TARGET_COLUMN = "class"
 
 @dataclass
 class EnvironmentVariable:
