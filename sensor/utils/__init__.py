@@ -2,8 +2,10 @@ import pandas as pd
 from sensor.config import mongo_client
 from sensor.logger import logging
 from sensor.exception import SensorException
+import numpy as np
 import sys,os
 import yaml
+
 
 def get_collection_as_dataframe(database_name:str,collection_name:str)->pd.DataFrame:
 
