@@ -16,6 +16,7 @@ def start_batch_prediction(input_file_path):
         logging.info(f"Reading file :{input_file_path}")
         df = pd.read_csv(input_file_path)
         df.replace({"na":np.NAN},inplace=True)
+        
         #validation
         
         logging.info(f"Loading transformer to transform dataset")
